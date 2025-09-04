@@ -2,22 +2,50 @@
 
 void    Contact::set_fname(std::string fname)
 {
-    std::cout << lname << std::endl;
-}
-void Contact::set_lname(std::string lname)
-{
-    std::cout << lname << std::endl;
-}
-void Contact::set_nickname(std::string nickname)
-{
-    std::cout << nickname << std::endl;   
+    _firstName = fname;
 }
 
-void Contact::set_phonenbr(std::string lname)
+void Contact::set_lname(std::string lname)
 {
-    std::cout << phonenbr << std::endl;
+    _lastName = lname;
 }
+
+void Contact::set_nickname(std::string nickname)
+{
+    _nickName = nickname;
+}
+
+void Contact::set_phonenbr(std::string phoneNbr)
+{
+    _phoneNbr = phoneNbr;
+}
+
 void Contact::set_darksecret(std::string darksecret)
 {
-    std::cout << darksecret << std::endl;
+    _darkSecret = darksecret;
+}
+
+std::string Contact::getFirstName()
+{
+    return _firstName;
+}
+
+std::string Contact::getLastName()
+{
+    return _lastName;
+}
+
+std::string Contact::getNickName()
+{
+    return _nickName;
+}
+
+std::string Contact::getPhoneNbr()
+{
+    return _phoneNbr;
+}
+
+std::string Contact::getDarkSecret()
+{
+    return _darkSecret;
 }
