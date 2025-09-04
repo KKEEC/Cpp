@@ -3,13 +3,14 @@
 #define PHONEBOOK_HPP
 
 #include <iostream>
-#include "contact.hpp"
+#include "Contact.hpp"
 
 
 class Phonebook
 {
     private:
-        Contact contacts[8];
+        int     _Index;
+        Contact _contacts[8];
     public:
         
 
