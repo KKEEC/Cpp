@@ -18,6 +18,26 @@ class Contact
         void set_nickname(std::string nickname);
         void set_phonenbr(std::string phonenbr);
         void set_darksecret(std::string darksecret);
+        std::string get_fname()
+        {
+            return (this->firstname);
+        }
+        std::string get_lname()
+        {
+            return (this->lastname);
+        }
+        std::string get_nickname()
+        {
+            return (this->nickname);
+        }
+        std::string get_phonenbr()
+        {
+            return (this->phonenbr);
+        }
+        std::string get_darksecret()
+        {
+            return (this->darkestsecret);
+        }
 };
 
 void    Contact::set_fname(std::string fname)
